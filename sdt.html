@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SEMAFORO DUPLO TINKERCAD</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">
+          <p1>Arduíno</p1>
+        </div>
+        <div class="right">
+          <a href="index.html">Inicio</a>
+          <a href="sst.html">SST</a>
+          <a href="sda.html">SDA</a>
+          <a href="sdt.html">SDT</a>
+          <a href="ssp.html">SSP</a>
+          <a href="sd09.html">SD09</a>
+          <a href="s90.html">S90</a>
+          <a href="c09.html">C09</a>
+        </div>
+      </nav>
+    </header>
+
+    <ul>
+      <h1>Circuito do projeto:</h1>
+      <img src="./assets/tinkerDuploProj.png" alt="tdp" />
+
+      <h1>Código C++ por escrito:</h1>
+      <pre>
+            <li>
+void setup()
+{
+  pinMode(13, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(9, OUTPUT);
+  pinMode(11, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(12, OUTPUT);
+}
+
+void loop()
+{
+  digitalWrite(13, HIGH);
+  digitalWrite(8, HIGH);
+  delay(7000); 
+  digitalWrite(8, LOW);
+  digitalWrite(9, HIGH);
+  delay(2000);
+  digitalWrite(9, LOW);
+  digitalWrite(13, LOW);
+  digitalWrite(11, HIGH);
+  digitalWrite(10, HIGH);
+  delay(7000); 
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  delay(2000); 
+  digitalWrite(12, LOW);
+  digitalWrite(10, LOW);
+  delay(1);
+}
+            </li>
+        </pre>
+    </ul>
+  </body>
+</html>
